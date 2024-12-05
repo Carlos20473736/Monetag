@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniApp de Recompensas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            font-size: 18px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ganhe Recompensas!</h1>
+    <div class="content">
+        <p>Para ganhar recompensas, clique no botão abaixo e assista ao vídeo!</p>
+        <button id="watchButton">Assistir ao vídeo</button>
+        <div id="reward-ad" style="margin-top: 20px; display: none;">
+            <!-- O conteúdo do vídeo ou anúncio será carregado aqui -->
+        </div>
+    </div>
+
+    <!-- Script para carregar o anúncio de recompensa -->
+    <script src='//niphaumeenses.net/vignette.min.js' data-zone='8613811' data-sdk='show_8613811'></script>
+
+    <script>
+        // Quando o botão for clicado, mostrar o conteúdo do vídeo ou anúncio
+        document.getElementById('watchButton').addEventListener('click', function() {
+            // Exibir a área de recompensa (vídeo ou conteúdo)
+            document.getElementById('reward-ad').style.display = 'block';
+            // Você pode adicionar lógica adicional aqui para carregar o vídeo ou interagir com o anúncio
+            alert('Agora você pode assistir ao vídeo e ganhar recompensas!');
+        });
+    </script>
+</body>
+</html>
